@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Projeto Agrinho 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>Agro Forte</span>
+            </div>
+            <nav class="nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#objetivo">Objetivo</a></li>
+                    <li><a href="#cards">Agro</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                    <li><button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="parallax-bg" id="parallaxBg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-in">Agro Forte</h1>
+            <p class="hero-subtitle animate-in">O agronegócio impulsionando o desenvolvimento de Itambaracá - Paraná</p>
+            <button class="btn btn-primary" id="scrollBtn">Conheça o Agro de Itambaracá</button>
+        </div>
+    </section>
+
+    <!-- Objetivo Section -->
+    <section id="objetivo" class="section objetivo-section">
+        <div class="container">
+            <h2 class="section-title">Objetivo do Projeto</h2>
+            <div class="objetivo-content">
+                <div class="objetivo-card fade-in-up">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Agrinho 2026</h3>
+                    <p>O Agrinho é um projeto educativo que valoriza a sustentabilidade e o papel fundamental do agronegócio no desenvolvimento econômico e social de nossas regiões.</p>
+                </div>
+                <div class="objetivo-card fade-in-up" style="animation-delay: 0.2s;">
+                    <i class="fas fa-fire"></i>
+                    <h3>Agro Forte</h3>
+                    <p>O tema "Agro Forte" simboliza a força, resiliência e importância do setor agrícola para Itambaracá, mostrando como o agronegócio é essencial para nossa economia.</p>
+                </div>
+                <div class="objetivo-card fade-in-up" style="animation-delay: 0.4s;">
+                    <i class="fas fa-globe"></i>
+                    <h3>Itambaracá</h3>
+                    <p>Nosso município é uma potência agrícola. O agronegócio gera empregos, produz alimentos de qualidade, investe em tecnologia e pratica sustentabilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Agro Section -->
+    <section id="cards" class="section cards-section">
+        <div class="container">
+            <h2 class="section-title">O Agro de Itambaracá</h2>
+            <div class="cards-grid">
+                <div class="card fade-in-up">
+                    <div class="card-icon">🌱</div>
+                    <h3>Agricultura</h3>
+                    <p>Itambaracá é conhecida pelo cultivo de diversas culturas agrícolas. Soja, milho, trigo e outros produtos são essenciais para a alimentação e economia regional.</p>
+                    <div class="card-footer">
+                        <span class="badge">Produtor</span>
+                    </div>
+                </div>
+
+                <div class="card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="card-icon">🚜</div>
+                    <h3>Tecnologia</h3>
+                    <p>Máquinas modernas, sistemas de irrigação, tratores de última geração e tecnologia digital transformam a forma como cultivamos, aumentando produtividade.</p>
+                    <div class="card-footer">
+                        <span class="badge">Inovação</span>
+                    </div>
+                </div>
+
+                <div class="card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="card-icon">💼</div>
+                    <h3>Economia</h3>
+                    <p>O agronegócio gera milhares de empregos diretos e indiretos em Itambaracá, impulsionando o comércio local e o desenvolvimento sustentável da região.</p>
+                    <div class="card-footer">
+                        <span class="badge">Oportunidades</span>
+                    </div>
+                </div>
+
+                <div class="card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="card-icon">🌍</div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Práticas responsáveis de cultivo, conservação do solo, uso eficiente de água e preservação ambiental garantem um futuro saudável para as próximas gerações.</p>
+                    <div class="card-footer">
+                        <span class="badge">Futuro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustentabilidade Section -->
+    <section id="sustentabilidade" class="section sustentabilidade-section">
+        <div class="container">
+            <h2 class="section-title">Agro e Sustentabilidade</h2>
+            <div class="sustentabilidade-content">
+                <div class="sustent-item fade-in-up">
+                    <div class="sustent-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Preservação Ambiental</h3>
+                    <p>Protegemos nossas matas nativas, reflorestamos áreas degradadas e mantemos a biodiversidade viva em nossas propriedades.</p>
+                </div>
+
+                <div class="sustent-item fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="sustent-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3>Uso Consciente de Água</h3>
+                    <p>Sistemas modernos de irrigação, coleta de água da chuva e gestão eficiente garantem o uso responsável deste recurso essencial.</p>
+                </div>
+
+                <div class="sustent-item fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="sustent-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Agricultura Sustentável</h3>
+                    <p>Rotação de culturas, compostagem, controle biológico e redução de agrotóxicos mantêm a saúde do solo e do ecossistema.</p>
+                </div>
+
+                <div class="sustent-item fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="sustent-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Tecnologia Verde</h3>
+                    <p>Painéis solares, máquinas eficientes e energias renováveis reduzem a pegada de carbono do nosso agronegócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section quiz-section">
+        <div class="container">
+            <h2 class="section-title">Quiz Educativo</h2>
+            <p class="quiz-subtitle">Teste seus conhecimentos sobre sustentabilidade!</p>
+            
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                
+                <div class="quiz-content">
+                    <div id="quizQuestion" class="quiz-question"></div>
+                    <div id="quizOptions" class="quiz-options"></div>
+                </div>
+
+                <div id="quizResult" class="quiz-result hidden">
+                    <h3>Parabéns! 🎉</h3>
+                    <p class="result-score" id="resultScore"></p>
+                    <p class="result-message" id="resultMessage"></p>
+                    <button class="btn btn-primary" onclick="resetQuiz()">Refazer Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section id="galeria" class="section galeria-section">
+        <div class="container">
+            <h2 class="section-title">Galeria de Imagens</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item fade-in-up">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%);">
+                        <i class="fas fa-wheat"></i>
+                    </div>
+                    <p>Campos de Agricultura</p>
+                </div>
+
+                <div class="galeria-item fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #2E7D32 0%, #81C784 100%);">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <p>Máquinas Modernas</p>
+                </div>
+
+                <div class="galeria-item fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #81C784 0%, #1B5E20 100%);">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <p>Plantações Verdes</p>
+                </div>
+
+                <div class="galeria-item fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #1B5E20 0%, #81C784 100%);">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <p>Sustentabilidade</p>
+                </div>
+
+                <div class="galeria-item fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <p>Tecnologia Rural</p>
+                </div>
+
+                <div class="galeria-item fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="galeria-image" style="background: linear-gradient(135deg, #81C784 0%, #2E7D32 100%);">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <p>Energia Renovável</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curiosidades Section -->
+    <section id="curiosidades" class="section curiosidades-section">
+        <div class="container">
+            <h2 class="section-title">Curiosidades</h2>
+            <div class="curiosidades-grid">
+                <div class="curiosidade-card fade-in-up">
+                    <div class="curiosidade-number">01</div>
+                    <h3>Agronegócio Brasileiro</h3>
+                    <p>O Brasil é um dos maiores produtores de alimentos do mundo, responsável por alimentar bilhões de pessoas em diversos continentes.</p>
+                </div>
+
+                <div class="curiosidade-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="curiosidade-number">02</div>
+                    <h3>Produção Agrícola</h3>
+                    <p>A produção agrícola brasileira utiliza apenas 30% do território, deixando 70% preservados para natureza, água e florestas.</p>
+                </div>
+
+                <div class="curiosidade-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="curiosidade-number">03</div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Os agricultores brasileiros estão entre os mais sustentáveis do mundo, com práticas avançadas de conservação ambiental.</p>
+                </div>
+
+                <div class="curiosidade-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="curiosidade-number">04</div>
+                    <h3>Tecnologia Rural</h3>
+                    <p>Drones, inteligência artificial e IoT revolucionam o campo, aumentando produtividade e reduzindo desperdícios.</p>
+                </div>
+
+                <div class="curiosidade-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="curiosidade-number">05</div>
+                    <h3>Empregos</h3>
+                    <p>O agronegócio gera mais de 27 milhões de empregos no Brasil, movimentando a economia de cidades e interior.</p>
+                </div>
+
+                <div class="curiosidade-card fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="curiosidade-number">06</div>
+                    <h3>Itambaracá</h3>
+                    <p>Nosso município é um importante polo agrícola do Paraná, contribuindo significativamente para a economia regional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Créditos Section -->
+    <section id="creditos" class="section creditos-section">
+        <div class="container">
+            <h2 class="section-title">Créditos</h2>
+            <div class="creditos-content">
+                <div class="credito-item">
+                    <h4>Aluno</h4>
+                    <p>Arthur Marcos Morgante</p>
+                </div>
+                <div class="credito-item">
+                    <h4>Professor Orientador</h4>
+                    <p>Guilherme Cordeiro</p>
+                </div>
+                <div class="credito-item">
+                    <h4>Projeto</h4>
+                    <p>Concurso Agrinho 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p><strong>Agro Forte 2026</strong></p>
+                <p>Tema: A Força do Agro em Itambaracá - Paraná</p>
+                <p>© 2026 - Juntos fortalecendo o agro e construindo um futuro sustentável.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
