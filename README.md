@@ -10,7 +10,7 @@ O projeto foi desenvolvido utilizando **HTML5, CSS3 e JavaScript puro**, sem dep
 
 ## 👨‍💼 Informações do Projeto
 
-- **Aluno:** Arthur Marcos Morgante
+- **Aluno:** Arthur Marques Morgante
 - **Professor Orientador:** Guilherme Cordeiro
 - **Concurso:** Agrinho 2026
 - **Tema:** Agro Forte - A Força do Agro em Itambaracá
@@ -154,7 +154,7 @@ Características:
 
 ### 9. **Créditos** 🏆
 Seção elegante com:
-- **Aluno:** Arthur Marcos Morgante
+- **Aluno:** Arthur Marques Morgante
 - **Professor:** Guilherme Cordeiro
 - **Projeto:** Concurso Agrinho 2026
 
