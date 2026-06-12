@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App - Local Storage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="todo-styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1><i class="fas fa-tasks"></i> My Todo List</h1>
+            <p class="subtitle">Stay organized and track your tasks</p>
+        </div>
+
+        <!-- Add Todo Section -->
+        <div class="add-todo-section">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    class="todo-input" 
+                    placeholder="Add a new task..."
+                    autocomplete="off"
+                >
+                <button id="addBtn" class="add-btn">
+                    <i class="fas fa-plus"></i> Add
+                </button>
+            </div>
+            <div class="priority-container">
+                <label for="priority">Priority:</label>
+                <select id="priority" class="priority-select">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Filter & Sort Section -->
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-list"></i> All
+                </button>
+                <button class="filter-btn" data-filter="active">
+                    <i class="fas fa-circle-notch"></i> Active
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    <i class="fas fa-check-circle"></i> Completed
+                </button>
+            </div>
+            <div class="sort-buttons">
+                <button class="sort-btn" id="sortPriority" title="Sort by priority">
+                    <i class="fas fa-arrow-up-a-z"></i>
+                </button>
+                <button class="sort-btn" id="sortDate" title="Sort by date">
+                    <i class="fas fa-calendar"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-label">Total:</span>
+                <span class="stat-value" id="totalTodos">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Completed:</span>
+                <span class="stat-value" id="completedTodos">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Pending:</span>
+                <span class="stat-value" id="pendingTodos">0</span>
+            </div>
+        </div>
+
+        <!-- Todo List -->
+        <div class="todo-list-container">
+            <ul id="todoList" class="todo-list">
+                <!-- Todos will be added here -->
+            </ul>
+            <div id="emptyState" class="empty-state">
+                <i class="fas fa-inbox"></i>
+                <p>No tasks yet. Add one to get started!</p>
+            </div>
+        </div>
+
+        <!-- Actions Section -->
+        <div class="actions-section">
+            <button id="clearCompleted" class="action-btn danger">
+                <i class="fas fa-trash"></i> Clear Completed
+            </button>
+            <button id="clearAll" class="action-btn danger">
+                <i class="fas fa-trash-alt"></i> Clear All
+            </button>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle" title="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <script src="todo-script.js"></script>
+</body>
+</html>
